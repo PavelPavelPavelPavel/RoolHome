@@ -17,9 +17,11 @@ const Header = () => {
 				</ul>
 				<button
 					onClick={sendCallInfo}
-					className='transition-scale duration-75 active:bg-dark-aquamarin hover:scale-y-110 w-full min-h-10 flex flex-row items-center border-2 border-red gap-2 rounded-full overflow-hidden'>
-					<span className='pl-2 text-red'>{getCall}</span>
-					<img src={phoneSign} alt='phoneSign' className='max-w-6 ' />
+					className='transition-scale duration-75 active:bg-dark-aquamarin hover:border-black hover:scale-y-110 w-full min-h-10 flex flex-row items-center border-2 border-red gap-2 rounded-full overflow-hidden'>
+					<span className='pl-2 text-red hover:text-black'>
+						{getCall}
+					</span>
+					<img src={phoneSign} alt='phoneSign' className='max-w-6' />
 				</button>
 			</div>
 		</header>
