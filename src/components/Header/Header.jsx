@@ -8,7 +8,7 @@ const Header = () => {
 	}
 
 	return (
-		<header className='w-full px-2 pt-2 flex flex-row items-center justify-between'>
+		<header className='w-full px-2 py-2 flex flex-row items-center justify-between'>
 			<img src={logo} className='max-w-64' alt='logo'></img>
 			<div className='flex flex-col items-center gap-1'>
 				<ul className='list-none'>
@@ -17,10 +17,8 @@ const Header = () => {
 				</ul>
 				<button
 					onClick={sendCallInfo}
-					className='transition-scale duration-75 active:bg-dark-aquamarin hover:border-black hover:scale-y-110 w-full min-h-10 flex flex-row items-center border-2 border-red gap-2 rounded-full overflow-hidden'>
-					<span className='pl-2 text-red hover:text-black'>
-						{getCall}
-					</span>
+					className='transition-scale duration-75 active:bg-dark-aquamarin hover:scale-y-110 w-full min-h-10 flex flex-row items-center border-2 border-black gap-2 rounded-full overflow-hidden'>
+					<span className='pl-2 text-red'>{getCall}</span>
 					<img src={phoneSign} alt='phoneSign' className='max-w-6' />
 				</button>
 			</div>

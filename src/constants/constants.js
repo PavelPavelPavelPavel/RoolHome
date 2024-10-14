@@ -1,13 +1,16 @@
 export const cityTel = '+7-499-714-15-25';
 export const mobileTel = '+7-901-330-15-25';
+export const telTitle = 'Телефон';
 export const email = 'info@roolhome.ru';
-export const companyName = "RoolHome Group©";
-export const startAge = '2008';
 export const emailTitle = 'Почта';
+export const companyName = "RoolHome Group ©";
+export const startAge = 'Дарим комфорт с 2008';
 export const getCall = 'Заказать обратный звонок';
 export const ourOffer = 'Что мы предлагаем?';
 export const submitApplication = 'Оствить заявку';
 export const aboutUsTitle = 'Почему мы ?';
+export const adressTitle = "Адрес";
+export const adress = "г.Ивантеевка, ул.Хлебозаводская, д.10, офис 21";
 export const aboutUsDescription = {
     firs: 'Оставив заявку на нашем сайте или по телефону вы получите оперативный выезд технического специалиста для замера, а оформив заказ - доставку и установку уже через 3 дня с момента заключения договора.Соблюдаем сроки, дорожим репутацией.',
     second: 'В нашей команде только проверенные, высококласные профессионалы с многолетним опытом работы в данном направлении.Технические специалисты помогут с выбором на замере, а специалисты монтажной группы выполнят установку в лучшем виде.',

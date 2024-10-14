@@ -23,6 +23,7 @@
 }
 
 body {
+	margin: auto;
 	font-family: "ZenKaku", Arial, Helvetica, sans-serif;
 	max-width: 1280px;
 	background-color: #97caef;
