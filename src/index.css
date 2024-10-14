@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "ZenKakuGothicNew-Medium";
+	src: local("ZenKaku"), url(./fonts/ZenKakuGothicNew-Medium.woff),
+		url(./fonts/ZenKakuGothicNew-Medium.woff2);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+	display: flex;
+	flex-direction: column;
+	flex: 1 auto 1;
+	align-items: center;
+	justify-content: center;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "ZenKaku", Arial, Helvetica, sans-serif;
+	max-width: 1280px;
+	background-color: #97caef;
+}
+
+svg {
+	display: flex;
+	align-items: center;
+}
+
+@import url(../src/components/Header/__phone/header__phone.css);
