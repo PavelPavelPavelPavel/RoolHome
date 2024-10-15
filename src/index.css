@@ -13,7 +13,7 @@
 		@apply flex items-center font-bold text-4xl text-red max-h-9 content-center;
 	}
 	.header__btn {
-		@apply min-w-64 min-h-10 flex flex-row items-center justify-between border-2 border-black  rounded-full overflow-hidden transition-all duration-75 active:bg-black focus:outline-none hover:scale-110;
+		@apply min-w-64 min-h-10 flex flex-row items-center justify-between border-2 border-black  rounded-full overflow-hidden transition-all duration-75 active:scale-95 focus:outline-none hover:scale-110;
 	}
 	.footer {
 		@apply p-2 h-36 tracking-normal relative w-full bg-red flex flex-row justify-between items-center rounded-t-md;
@@ -32,6 +32,12 @@
 	}
 	.aboutus__text {
 		@apply max-w-[700px] text-sm text-justify pr-2;
+	}
+	.title {
+		@apply text-black font-bold text-2xl pb-3;
+	}
+	.arrow__btn {
+		@apply w-8 h-8 absolute z-10 cursor-pointer active:scale-50 transition-all duration-75 focus:outline-none hover:scale-110;
 	}
 }
 

@@ -6,6 +6,7 @@ export const email = 'info@roolhome.ru';
 export const emailTitle = 'Почта';
 export const companyName = "RoolHome Group ©";
 export const startAge = 'Дарим комфорт с 2008';
+export const sliderTitle = 'Комфорт вашего дома';
 export const getCall = 'Заказать обратный звонок';
 export const ourOffer = 'Что мы предлагаем?';
 export const submitApplication = 'Оствить заявку';
