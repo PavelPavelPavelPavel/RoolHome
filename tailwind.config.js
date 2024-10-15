@@ -18,7 +18,8 @@ module.exports = {
       }
     },
     colors: {
-      'red': '#fc4445',
+      'red': '#ff0103',
+      'white': '#ffffff',
       'aquamarin': '#3feee6',
       'dark-aquamarin': '#55bcc9',
       'gray': '#97caef',

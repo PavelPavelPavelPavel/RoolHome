@@ -16,11 +16,13 @@ const Header = () => {
 					<li className='header__phone'>{cityTel}</li>
 				</ul>
 				<button onClick={sendCallInfo} className='header__btn'>
-					<span className='pl-2 text-red'>{getCall}</span>
+					<span className='pl-2 text-red animate-pulse'>
+						{getCall}
+					</span>
 					<img
 						src={phoneSign}
 						alt='phoneSign'
-						className='max-w-6 max-h-6 pr-2'
+						className='max-w-6 max-h-6 pr-2 animate-pulse'
 					/>
 				</button>
 			</div>

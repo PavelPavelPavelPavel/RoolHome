@@ -12,15 +12,14 @@
 	.header__phone {
 		@apply flex items-center font-bold text-4xl text-red max-h-9 content-center;
 	}
-
 	.header__btn {
-		@apply w-full min-h-10 flex flex-row items-center justify-between border-2 border-black  rounded-full overflow-hidden transition-all duration-75 active:bg-dark-aquamarin focus:outline-none hover:scale-y-110;
+		@apply min-w-64 min-h-10 flex flex-row items-center justify-between border-2 border-black  rounded-full overflow-hidden transition-all duration-75 active:bg-black focus:outline-none hover:scale-110;
 	}
 	.footer {
 		@apply p-2 h-36 tracking-normal relative w-full bg-red flex flex-row justify-between items-center rounded-t-md;
 	}
 	.mail__text {
-		@apply text-gray transition-all duration-75 active:text-black hover:scale-110;
+		@apply text-white transition-all duration-75 active:text-black hover:scale-110;
 	}
 	.mail__copytext {
 		@apply max-w-32 text-black text-xs leading-3 cursor-auto;
@@ -29,7 +28,7 @@
 		@apply flex flex-row justify-between max-h-40 gap-40 border-black border-2 rounded-md;
 	}
 	.aboutus__img {
-		@apply max-w-40 max-h-40  p-1 rounded-lg;
+		@apply max-w-40 max-h-40  m-1 border-2 rounded-lg;
 	}
 	.aboutus__text {
 		@apply max-w-[700px] text-sm text-justify pr-2;
@@ -40,7 +39,7 @@ body {
 	margin: auto;
 	font-family: "ZenKaku", Arial, Helvetica, sans-serif;
 	max-width: 1280px;
-	background-color: #97caef;
+	background-color: #ffffff;
 }
 
 .app {
