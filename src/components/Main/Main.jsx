@@ -1,5 +1,11 @@
+import AboutUs from "../AboutUs/AboutUs";
+
 const Main = () => {
-	return <div className='flex grow-1 flex-col border-t-2 w-50 h-20'></div>;
+	return (
+		<main className=' w-full flex flex-col px-2 min-h-80 '>
+			<AboutUs />
+		</main>
+	);
 };
 
 export default Main;
