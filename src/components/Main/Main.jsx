@@ -1,6 +1,7 @@
 import AboutUs from "../AboutUs/AboutUs";
 import Slider from "../Slider/Slider";
 import OurOffers from "../OurOffers/OurOffers";
+import WorksGallery from "../WorksGallery/WorksGallery";
 
 const Main = () => {
 	return (
@@ -8,6 +9,7 @@ const Main = () => {
 			{/* <Slider /> */}
 			<OurOffers />
 			<AboutUs />
+			<WorksGallery />
 		</main>
 	);
 };

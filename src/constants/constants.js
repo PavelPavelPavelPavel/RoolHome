@@ -1,5 +1,4 @@
-import { ourOfferPhoto } from './images';
-const { jaluzi, plisse, rimskie, rool, roolVorota, santehStavni, shkafParking, zashitnieStavni, prozrachnieStavni } = ourOfferPhoto; //фото для оффера
+
 export const cityTel = '+7-499-714-15-25';
 export const mobileTel = '+7-901-330-15-25';
 export const copyPhone = 'Email скопирован в буфер обмена';
@@ -22,43 +21,6 @@ export const aboutUsDescription = {
     four: 'Индивидуальный подход к каждому клиенту. Скидки от объёмов. Акции. Подарки. Специальные условия для дизайнеров и строительных организаций.'
 };
 export const freeCallOfMeasurer = "бесплатный вызов замерщика";
-export const ourWorks = "Примеры наших работ";
-export const ourOffers = [
-    {
-        name: 'Сантехнические рольставни',
-        photo: santehStavni,
-    },
-    {
-        name: 'Защитные рольставни',
-        photo: zashitnieStavni,
-    },
-    {
-        name: 'Рулонные ворота',
-        photo: roolVorota,
-    },
-    {
-        name: 'Шкафы в паркинг',
-        photo: shkafParking,
-    },
-    {
-        name: 'Жалюзи',
-        photo: jaluzi,
-    },
-    {
-        name: 'Рулонные шторы',
-        photo: rool,
-    },
-    {
-        name: 'Римские шторы',
-        photo: rimskie,
-    },
-    {
-        name: 'Плиссе',
-        photo: plisse,
-    },
-    {
-        name: 'Прозрачные рольставни',
-        photo: prozrachnieStavni,
-    }
-]
+export const ourWorksTitle = "Примеры наших работ";
+
 

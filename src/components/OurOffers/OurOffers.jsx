@@ -1,5 +1,6 @@
 import Card from "../Card/Card";
-import { ourOffer, ourOffers } from "../../constants/constants";
+import { ourOffer } from "../../constants/constants";
+import { ourOffers } from "../../constants/images";
 
 const OurOffers = () => {
 	return (

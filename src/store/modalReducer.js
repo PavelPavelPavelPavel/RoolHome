@@ -4,6 +4,7 @@ const defaultState = {
 
 const TOGGLE_MODAL = "TOGGLE_MODAL";
 
+
 export const modalReducer = (state = defaultState, action) => {
 
     switch (action.type) {
@@ -11,7 +12,6 @@ export const modalReducer = (state = defaultState, action) => {
             return {
                 ...state, isOpened: action.payload
             }
-
         default:
             return state
     }

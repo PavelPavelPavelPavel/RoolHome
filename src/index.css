@@ -54,6 +54,7 @@ body {
 	flex: 1 auto 1;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
 
 * {
