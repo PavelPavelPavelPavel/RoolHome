@@ -18,7 +18,7 @@ const FullSizePhoto = () => {
 		<div className='w-full h-full flex flex-col items-center justify-center bg-opacity-70 bg-black fixed top-0 '>
 			<button
 				src={closeBtn}
-				className='transition-transform absolute top-2 right-2 w-10 h-10 hover:scale-110 hover:border-black hover:border-2 hover:rounded-full hover:bg-black'
+				className='transition-transform duration-75 absolute top-2 right-2 w-10 h-10 hover:scale-110 hover:border-black hover:border-2 hover:rounded-full hover:bg-black '
 				onClick={() => {
 					handleCloseImg();
 				}}>

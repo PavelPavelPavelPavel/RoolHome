@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addModalAction } from "../../store/modalReducer";
-import Popup from "../Popup/Popup";
+import { copyTextToClipboard } from "../../utils/function/copyTextToClipBoard";
 import {
 	companyName,
 	startAge,
@@ -16,16 +17,25 @@ import {
 
 const Footer = () => {
 	const dispatch = useDispatch();
+	const [btnEmailCondition, setBtnEmailCondition] = useState(false);
 	const isOpened = useSelector((state) => state.modalReducer.isOpened);
 	const mailTextStyle = "mail__text";
 	const messageCopyTextStyle = "mail__copytext";
 
 	function saveEmail() {
 		dispatch(addModalAction(true));
+		copyTextToClipboard(email);
+		setBtnEmailCondition(true);
+		setTimeout(returnEmailBtn, 2000);
+	}
+
+	function returnEmailBtn() {
+		dispatch(addModalAction(false));
+		setBtnEmailCondition(false);
 	}
 
 	return (
-		<footer className='footer'>
+		<footer className='footer relative'>
 			<ul className='flex flex-row gap-8'>
 				<li className='flex flex-col gap-1'>
 					<h3 className='font-bold'>{`${telTitle}:`}</h3>
@@ -36,6 +46,7 @@ const Footer = () => {
 					<div className='flex flex-col gap-1'>
 						<h3 className='font-bold'>{`${emailTitle}:`}</h3>
 						<button
+							disabled={btnEmailCondition}
 							className={
 								isOpened ? messageCopyTextStyle : mailTextStyle
 							}
