@@ -1,13 +1,16 @@
 import Card from "../Card/Card";
+import { useState } from "react";
 import { ourOffer } from "../../constants/constants";
 import { ourOffers } from "../../constants/images";
 
 const OurOffers = () => {
+	const [renderList, setRenderList] = useState(ourOffers);
+
 	return (
-		<section className=' py-2 flex flex-col justify-center items-center'>
+		<section className=' py-2 flex flex-col justify-center items-center pb-5'>
 			<h2 className='title'>{ourOffer}</h2>
 			<ul className='grid grid-cols-4 auto-cols-fr gap-3 justify-items-center'>
-				{ourOffers.map((item) => {
+				{renderList.map((item) => {
 					return (
 						<Card
 							key={crypto.randomUUID()}

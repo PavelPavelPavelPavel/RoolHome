@@ -27,7 +27,7 @@ const WorksGallery = () => {
 								openFullSize(photo);
 							}}
 							key={photo.id}
-							className='w-full h-[350px] rounded-sm object-cover cursor-pointer active:opacity-65 hover:opacity-85 hover:duration-75 overflow-hidden'
+							className='w-full h-[350px]  first:col-span-3 rounded-sm object-cover cursor-pointer opacity:0 duration-500 active:opacity-65 hover:opacity-85 hover:duration-500 overflow-hidden'
 							src={require(`${process.env.REACT_APP_WORK_GALLERY_URL}${photo.fileName}`)}
 							alt={photo.fileName}></img>
 					);

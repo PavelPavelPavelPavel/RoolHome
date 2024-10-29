@@ -8,7 +8,7 @@ const Header = () => {
 	}
 
 	return (
-		<header className='w-full p-2  flex flex-row items-center justify-between border-black border-b-2  border-opacity-45'>
+		<header className='w-full p-2 pb-5  flex flex-row items-center justify-between'>
 			<img src={logo} className='max-w-64' alt='logo'></img>
 			<div className='flex flex-col items-center gap-1'>
 				<ul className='list-none'>
