@@ -17,7 +17,6 @@ import {
 
 const Footer = () => {
 	const dispatch = useDispatch();
-	const [btnEmailCondition, setBtnEmailCondition] = useState(false);
 	const isOpened = useSelector((state) => state.modalReducer.isOpened);
 	const mailTextStyle = "mail__text";
 	const messageCopyTextStyle = "mail__copytext";
@@ -25,13 +24,11 @@ const Footer = () => {
 	function saveEmail() {
 		dispatch(addModalAction(true));
 		copyTextToClipboard(email);
-		setBtnEmailCondition(true);
 		setTimeout(returnEmailBtn, 2000);
 	}
 
 	function returnEmailBtn() {
 		dispatch(addModalAction(false));
-		setBtnEmailCondition(false);
 	}
 
 	return (
@@ -46,7 +43,7 @@ const Footer = () => {
 					<div className='flex flex-col gap-1'>
 						<h3 className='font-bold'>{`${emailTitle}:`}</h3>
 						<button
-							disabled={btnEmailCondition}
+							disabled={isOpened}
 							className={
 								isOpened ? messageCopyTextStyle : mailTextStyle
 							}

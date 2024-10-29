@@ -1,6 +1,6 @@
 
 /** @type {import('tailwindcss').Config} */
-import { customColors, customKeyFrames } from './src/constants/tailwindConf';
+import { customColors, pulseKeyFrames, caruselKeyFrames } from './src/constants/tailwindConf';
 
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
@@ -10,7 +10,8 @@ module.exports = {
         pulse: "pulse 2.5s linear infinite"
       },
       keyframes: {
-        pulse: customKeyFrames,
+        pulse: pulseKeyFrames,
+        carusel: caruselKeyFrames,
       }
     },
     colors: customColors,

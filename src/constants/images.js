@@ -26,6 +26,15 @@ export const workGallary = [
     'shtora-vannaya.jpg'
 ];
 
+export const slider = [
+    "glassHouseFirst.jpg",
+    "lightHouse.jpeg",
+    "windowOpened.jpeg",
+    "windowCloset.jpeg",
+    "room.jpg",
+]
+
+
 export const ourOffers = [
     {
         name: 'Сантехнические рольставни',
