@@ -6,16 +6,17 @@ const Card = ({ name, photo }) => {
 		const createMarkupName = {
 			__html: replaceWhiteSpaceToBr,
 		};
-		return <div dangerouslySetInnerHTML={createMarkupName} />;
+		return <p dangerouslySetInnerHTML={createMarkupName} />;
 	}
 
 	return (
-		<li className='flex flex-col items-center gap-2 border-double border-black border-2 rounded-md last:-col-start-2 last:-col-end-4'>
-			<h3 className='min-h-12 pt-2 text-md font-bold text-wrap text-center tracking-tighter antialiaseds'>
+		<li
+			className={`bg-black/[0.1] flex flex-col items-center justify-between gap-2 rounded-md last:-col-start-2 last:-col-end-4`}>
+			<h3 className='flex items-center min-h-12 pt-1 text-md font-bold leading-none text-wrap text-center tracking-tighter antialiaseds'>
 				{splitPhotoName(name)}
 			</h3>
 			<img
-				className='box-border border-t-2 object-scale-down'
+				className='w-[96%] h-[96%] mb-2 shadow-md shadow-black rounded-md object-cover'
 				src={photo}
 				alt={name}></img>
 		</li>
