@@ -1,11 +1,21 @@
+import { useState } from "react";
+
 const Card = ({ name, photo }) => {
+	function splitPhotoName(name) {
+		const replaceWhiteSpaceToBr = name.replace(" ", "<br />");
+		const createMarkupName = {
+			__html: replaceWhiteSpaceToBr,
+		};
+		return <div dangerouslySetInnerHTML={createMarkupName} />;
+	}
+
 	return (
-		<li className='flex flex-col items-center gap-2 border-black  border-2 rounded-md overflow-hidden bg-red bg-opacity-45 last:-col-start-2 last:-col-end-4'>
-			<h3 className='pt-2 py-2 text-lg font-bold h-9 line-clamp-1'>
-				{name}
+		<li className='flex flex-col items-center gap-2 border-double border-black border-2 rounded-md last:-col-start-2 last:-col-end-4'>
+			<h3 className='min-h-12 pt-2 text-md font-bold text-wrap text-center tracking-tighter antialiaseds'>
+				{splitPhotoName(name)}
 			</h3>
 			<img
-				className='min-w-64 h-60 box-border border-t-2 object-cover'
+				className='box-border border-t-2 object-scale-down'
 				src={photo}
 				alt={name}></img>
 		</li>
