@@ -18,8 +18,8 @@ import {
 const Footer = () => {
 	const dispatch = useDispatch();
 	const isOpened = useSelector((state) => state.modalReducer.isOpened);
-	const mailTextStyle = "mail__text";
-	const messageCopyTextStyle = "mail__copytext";
+	const mailTextStyle = "footer__mail-text";
+	const messageCopyTextStyle = "footer__mail-copytext";
 
 	function saveEmail() {
 		dispatch(addModalAction(true));

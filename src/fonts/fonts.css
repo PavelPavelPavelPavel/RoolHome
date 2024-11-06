@@ -1,0 +1,5 @@
+@font-face {
+	font-family: "ZenKakuGothicNew-Medium";
+	src: local("ZenKaku"), url(./ZenKakuGothicNew-Medium.woff),
+		url(./ZenKakuGothicNew-Medium.woff2);
+}

@@ -1,0 +1,10 @@
+.footer {
+	@apply p-2 h-36 tracking-normal relative w-full bg-red flex flex-row justify-between items-center rounded-t-md;
+}
+
+.footer__mail-text {
+	@apply text-white transition-all duration-75 active:text-black hover:scale-110;
+}
+.footer__mail-copytext {
+	@apply max-w-32 text-black text-xs leading-3 cursor-auto;
+}

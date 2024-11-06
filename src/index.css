@@ -1,45 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-	font-family: "ZenKakuGothicNew-Medium";
-	src: local("ZenKaku"), url(./fonts/ZenKakuGothicNew-Medium.woff),
-		url(./fonts/ZenKakuGothicNew-Medium.woff2);
-}
-
-@layer components {
-	.header__phone {
-		@apply flex items-center font-bold text-4xl text-red max-h-9 content-center;
-	}
-	.header__btn {
-		@apply min-w-64 min-h-10 flex flex-row items-center justify-between border-2 border-black  rounded-full overflow-hidden transition-all duration-75 active:scale-95 focus:outline-none hover:scale-110;
-	}
-	.footer {
-		@apply p-2 h-36 tracking-normal relative w-full bg-red flex flex-row justify-between items-center rounded-t-md;
-	}
-	.mail__text {
-		@apply text-white transition-all duration-75 active:text-black hover:scale-110;
-	}
-	.mail__copytext {
-		@apply max-w-32 text-black text-xs leading-3 cursor-auto;
-	}
-	.aboutus__listitem {
-		@apply flex flex-row justify-between bg-black/[0.1] max-h-40 gap-40 border-black border-2 rounded-md;
-	}
-	.aboutus__img {
-		@apply max-w-40 max-h-40  m-1 border-2 rounded-lg;
-	}
-	.aboutus__text {
-		@apply max-w-[700px] text-sm text-justify pr-2 pt-2;
-	}
-	.title {
-		@apply text-black font-bold text-2xl pb-3;
-	}
-	.arrow__btn {
-		@apply w-8 h-8 absolute z-10 cursor-pointer active:scale-50 transition-all duration-75 focus:outline-none hover:scale-110;
-	}
-}
+@import url(./fonts/fonts.css);
+@import url(./components/Header/header.css);
+@import url(./components/Footer/footer.css);
+@import url(./components/AboutUs/aboutus.css);
+@import url(./generalStyle/sectionTitle.css);
+@import url(./generalStyle/arrowBtn.css);
 
 body {
 	margin: auto;
