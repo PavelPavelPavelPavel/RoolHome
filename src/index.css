@@ -25,7 +25,7 @@
 		@apply max-w-32 text-black text-xs leading-3 cursor-auto;
 	}
 	.aboutus__listitem {
-		@apply flex flex-row justify-between max-h-40 gap-40 border-black border-2 rounded-md;
+		@apply flex flex-row justify-between bg-black/[0.1] max-h-40 gap-40 border-black border-2 rounded-md;
 	}
 	.aboutus__img {
 		@apply max-w-40 max-h-40  m-1 border-2 rounded-lg;

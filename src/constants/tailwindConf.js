@@ -17,23 +17,14 @@ export const pulseKeyFrames = {
     }
 }
 
-export const caruselKeyFrames = {
-    "0%": {
-        opacity: "0",
-        "animation-timing-function": "ease-in",
+
+export const scrollKeyFrames = {
+    "33%, 66%": {
+        transform: 'translateX(-100%)',
     },
-    "8%": {
-        opacity: "1",
-        transform: "scale(1.05)",
-        "animation-timing-function": "ease-out",
+    "66%, 100%": {
+        transform: 'translateX(-200%)',
     },
-    "17%": {
-        opacity: "1",
-        transform: "scale(1.1) rotate(3deg)",
-    },
-    "25%": {
-        opacity: "1",
-        transform: "scale(1.1) rotate(3deg)",
-    },
-    "100%": { opacity: "0" }
+
 }
+

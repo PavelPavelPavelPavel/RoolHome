@@ -27,11 +27,9 @@ export const workGallary = [
 ];
 
 export const slider = [
-    "glassHouseFirst.jpg",
-    "lightHouse.jpeg",
-    "windowOpened.jpeg",
-    "windowCloset.jpeg",
-    "room.jpg",
+    "1.jpg",
+    "2.jpeg",
+    "3.jpg",
 ]
 
 

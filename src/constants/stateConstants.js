@@ -1,0 +1,1 @@
+export const timerDelayForSlider = 15000;
