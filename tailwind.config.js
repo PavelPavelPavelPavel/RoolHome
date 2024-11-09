@@ -1,6 +1,6 @@
 
 /** @type {import('tailwindcss').Config} */
-import { customColors, pulseKeyFrames, scrollKeyFrames } from './src/constants/tailwindConf';
+import { customColors, pulseKeyFrames, scrollKeyFrames, pulseColor, pulseColorSecond } from './src/constants/tailwindConf';
 
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
@@ -8,13 +8,15 @@ module.exports = {
     colors: customColors,
     extend: {
       animation: {
-        pulse: "pulse 2.5s linear infinite",
-        "infinite-scroll": "scroll 30s linear infinite",
-        "infinite-scroll-last": "scroll 30s ease infinite",
+        pulse: "pulse 4s linear infinite",
+        pulseBg: "pulseColor 2.4s linear",
+        pulseBgSecond: "pulseColorSecond 2.4s linear",
       },
       keyframes: {
         pulse: pulseKeyFrames,
         scroll: scrollKeyFrames,
+        pulseColor,
+        pulseColorSecond
       }
     },
   },

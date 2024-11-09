@@ -13,7 +13,7 @@ export const pulseKeyFrames = {
         opacity: "1",
     },
     "50%": {
-        opacity: "0.5",
+        opacity: "0.2",
     }
 }
 
@@ -26,5 +26,23 @@ export const scrollKeyFrames = {
         transform: 'translateX(-200%)',
     },
 
+}
+
+export const pulseColor = {
+    "0%": {
+        "background-color": "rgba(1, 1, 1, 1)",
+    },
+    "100%": {
+        "background-color": "rgba(1, 1, 1, 0)",
+    }
+}
+
+export const pulseColorSecond = {
+    "0%": {
+        "background-color": "rgba(1, 1, 1, 1)",
+    },
+    "100%": {
+        "background-color": "rgba(1, 1, 1, 0)",
+    }
 }
 

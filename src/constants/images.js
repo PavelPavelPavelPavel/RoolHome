@@ -30,6 +30,8 @@ export const slider = [
     "1.jpg",
     "2.jpeg",
     "3.jpg",
+    "4.jpg",
+    "5.jpg"
 ]
 
 
