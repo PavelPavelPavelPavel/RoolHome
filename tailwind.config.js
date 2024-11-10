@@ -9,8 +9,8 @@ module.exports = {
     extend: {
       animation: {
         pulse: "pulse 4s linear infinite",
-        pulseBg: "pulseColor 2.4s linear",
-        pulseBgSecond: "pulseColorSecond 2.4s linear",
+        pulseBg: "pulseColor 2s linear",
+        pulseBgSecond: "pulseColorSecond 2s linear",
       },
       keyframes: {
         pulse: pulseKeyFrames,

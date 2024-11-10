@@ -16,7 +16,7 @@ const Card = ({ name, photo }) => {
 				{splitPhotoName(name)}
 			</h3>
 			<img
-				className='w-[96%] h-[96%] mb-2 shadow-md shadow-black rounded-md object-cover'
+				className='w-[94%] h-[94%] mb-2 shadow-md shadow-black rounded-md object-cover'
 				src={photo}
 				alt={name}></img>
 		</li>

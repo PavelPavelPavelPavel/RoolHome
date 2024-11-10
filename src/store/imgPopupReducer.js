@@ -10,7 +10,7 @@ export const imgPopupReducer = (state = defaultState, action) => {
     switch (action.type) {
         case TOGGLE_IMG_FULLSIZE:
             return {
-                ...state, isOpened: action.payload.isOpened, fileName: action.payload.fileName
+                ...state, fileName: action.payload.fileName
             }
 
         default:

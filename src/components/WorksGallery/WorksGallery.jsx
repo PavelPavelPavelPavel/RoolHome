@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toggleFullSizeImgAction } from "../../store/imgPopupReducer";
+import { addModalAction } from "../../store/modalReducer";
 import { ourWorksTitle } from "../../constants/constants";
 import { workGallary } from "../../constants/images";
 
@@ -7,10 +8,13 @@ const WorksGallery = () => {
 	const dispatch = useDispatch();
 
 	function openFullSize(photo) {
-		console.log(photo);
+		dispatch(
+			addModalAction({
+				isOpened: true,
+			})
+		);
 		dispatch(
 			toggleFullSizeImgAction({
-				isOpened: true,
 				fileName: photo,
 			})
 		);
