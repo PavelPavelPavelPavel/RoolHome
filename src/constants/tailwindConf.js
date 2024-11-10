@@ -5,7 +5,9 @@ export const customColors = {
     'red': '#B22222',
     'white': '#ffffff',
     'gray': '#DCDCDC',
-    'black': '#020009'
+    'black': '#020009',
+    'orange': '#FFA500',
+    'blue': "#4169E1"
 };
 
 export const pulseKeyFrames = {

@@ -1,0 +1,11 @@
+.form__input {
+	@apply w-full h-10 rounded p-2 outline-none border-black border-2 hover:border-orange focus:border-blue;
+}
+
+.input__wrapper {
+	@apply flex flex-col;
+}
+
+.input__label {
+	@apply font-bold;
+}

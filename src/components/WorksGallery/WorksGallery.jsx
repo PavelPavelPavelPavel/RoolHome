@@ -8,14 +8,11 @@ const WorksGallery = () => {
 	const dispatch = useDispatch();
 
 	function openFullSize(photo) {
-		dispatch(
-			addModalAction({
-				isOpened: true,
-			})
-		);
+		dispatch(addModalAction(true));
 		dispatch(
 			toggleFullSizeImgAction({
 				fileName: photo,
+				isOpened: true,
 			})
 		);
 	}

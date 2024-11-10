@@ -3,20 +3,26 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import FullSizePhoto from "./components/FullSizePhoto/FullSizePhoto";
-import Modal from "./components/Modal/Modal";
 import { useEffect } from "react";
+import RoolRequestForm from "./components/RoolRequestForm/RoolRequestForm";
 // import Test from "./components/Test";
 
 function App() {
-	const toggleModal = useSelector((state) => state.modalReducer);
+	const imgPopupReducer = useSelector((state) => state.imgPopupReducer);
+	const modalReducer = useSelector((state) => state.modalReducer);
+	const requestFormReducer = useSelector((state) => state.requestFormReducer);
 
 	return (
 		<div className='app'>
-			{/* <Test /> */}
 			<Header />
 			<Main />
 			<Footer />
-			{toggleModal.isOpened && <FullSizePhoto />}
+			{imgPopupReducer.isOpened && modalReducer.isOpened && (
+				<FullSizePhoto />
+			)}
+			{requestFormReducer.isOpened && modalReducer.isOpened && (
+				<RoolRequestForm />
+			)}
 		</div>
 	);
 }

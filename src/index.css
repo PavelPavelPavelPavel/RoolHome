@@ -7,6 +7,7 @@
 @import url(./components/AboutUs/aboutus.css);
 @import url(./generalStyle/sectionTitle.css);
 @import url(./generalStyle/arrowBtn.css);
+@import url(./components/RoolRequestForm/roolrequestform.css);
 
 body {
 	margin: auto;
