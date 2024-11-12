@@ -5,12 +5,15 @@ import Footer from "./components/Footer/Footer";
 import FullSizePhoto from "./components/FullSizePhoto/FullSizePhoto";
 import { useEffect } from "react";
 import RoolRequestForm from "./components/RoolRequestForm/RoolRequestForm";
-// import Test from "./components/Test";
 
 function App() {
 	const imgPopupReducer = useSelector((state) => state.imgPopupReducer);
 	const modalReducer = useSelector((state) => state.modalReducer);
 	const requestFormReducer = useSelector((state) => state.requestFormReducer);
+
+	useEffect(() => {
+		console.log(requestFormReducer);
+	}, [requestFormReducer]);
 
 	return (
 		<div className='app'>

@@ -15,7 +15,9 @@ export const aboutUsTitle = 'Почему мы ?';
 export const adressTitle = "Адрес";
 export const adress = "г.Ивантеевка, ул.Хлебозаводская, д.10, офис 21";
 export const requestFormTitle = 'Заявка на монтаж';
-export const submitBtnText = 'Оставить заявку';
+export const submitBtnText = 'Заказать звонок';
+export const freeCallOfMeasurer = "бесплатный вызов замерщика";
+export const ourWorksTitle = "Примеры наших работ";
 export const inputTitle = {
     name: 'Ваше имя',
     phone: 'Ваш телефон',
@@ -27,7 +29,10 @@ export const aboutUsDescription = {
     third: 'Вся наша продукция выполнена из проверенных временем комплектующих и материалов зарекомендовавших себя исключительно с хорошей стороны. Вся наша продукция проходит контроль качества. И для того что бы в любой момент эксплуатации Вы чувствовали себя комфортно мы предоставляем гарантию на все виды продукции и работы.',
     four: 'Индивидуальный подход к каждому клиенту. Скидки от объёмов. Акции. Подарки. Специальные условия для дизайнеров и строительных организаций.'
 };
-export const freeCallOfMeasurer = "бесплатный вызов замерщика";
-export const ourWorksTitle = "Примеры наших работ";
+export const formPlaceholder = {
+    name: 'Павел',
+    phone: '8-XXX-XXX-XX-XX',
+    text: 'Краткое описание'
+};
 
 

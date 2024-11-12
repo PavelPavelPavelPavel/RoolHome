@@ -36,7 +36,7 @@ const Slider = () => {
 				className={`object-cover w-full h-full ${emergenceStyle}`}
 				src={require(`${process.env.REACT_APP_SLIDER_GALLARY_URL}${slider[slideNum]}`)}
 				alt={"work example"}></img>
-			<div className='absolute top-4 h-20 w-5/12 bg-red/40 rounded-r-md z-50 overflow-hidden'>
+			<div className='absolute top-4 h-20 w-5/12 bg-red/40 rounded-r-md z-30 overflow-hidden'>
 				<h1 className='pr-5 text-3xl text-gray font-bold text-right'>
 					{sliderTitle}
 				</h1>

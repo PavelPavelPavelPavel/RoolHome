@@ -5,6 +5,7 @@ const defaultState = {
     text: '',
 }
 
+
 const FORM_STATE = 'FORM_STATE';
 
 export const requestFormReducer = (state = defaultState, action) => {

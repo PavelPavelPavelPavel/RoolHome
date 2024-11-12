@@ -9,7 +9,7 @@ const AboutUs = () => {
 			<h2 className='title'>{aboutUsTitle}</h2>
 			<ul className='flex flex-col justify-center items-center gap-4'>
 				<li className='max-w-[1031px] p-1 inline-block max-h-40 border-2 rounded-md border-red'>
-					<p className='text-center text-red'>
+					<p className='text-center text-red cursor-default'>
 						{aboutUsDescription.four}
 					</p>
 				</li>

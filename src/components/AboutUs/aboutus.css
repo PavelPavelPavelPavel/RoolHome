@@ -5,5 +5,5 @@
 	@apply max-w-40 max-h-40  m-1 border-2 rounded-lg shadow-md shadow-black;
 }
 .aboutus__text {
-	@apply max-w-[700px] text-sm text-justify pr-2 pt-3;
+	@apply max-w-[700px] text-sm text-justify pr-2 pt-3 cursor-default;
 }
