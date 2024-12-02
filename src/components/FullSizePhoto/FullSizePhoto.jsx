@@ -9,7 +9,7 @@ const FullSizePhoto = () => {
 			{
 				<img
 					className='py-3 max-w-2xl max-h-screen object-cover'
-					src={require(`${process.env.REACT_APP_WORK_GALLERY_URL}${imgInfo.fileName}`)}
+					src={require(`../../images/worksPhotosGallery/${imgInfo.fileName}`)}
 					alt='#'
 				/>
 			}

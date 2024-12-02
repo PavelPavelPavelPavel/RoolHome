@@ -11,14 +11,14 @@ function App() {
 	const modalReducer = useSelector((state) => state.modalReducer);
 	const requestFormReducer = useSelector((state) => state.requestFormReducer);
 
-	useEffect(() => {
-		console.log(requestFormReducer);
-	}, [requestFormReducer]);
+	// useEffect(() => {
+	// 	console.log(requestFormReducer);
+	// }, [requestFormReducer]);
 
 	return (
 		<div className='app'>
 			<Header />
-			<Main />
+			{/* <Main /> */}
 			<Footer />
 			{imgPopupReducer.isOpened && modalReducer.isOpened && (
 				<FullSizePhoto />

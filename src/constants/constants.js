@@ -16,11 +16,13 @@ export const adressTitle = "Адрес";
 export const adress = "г.Ивантеевка, ул.Хлебозаводская, д.10, офис 21";
 export const requestFormTitle = 'Заявка на монтаж';
 export const submitBtnText = 'Заказать звонок';
+export const submitBtnTextDisabled = 'Заполните поля верно';
 export const freeCallOfMeasurer = "бесплатный вызов замерщика";
 export const ourWorksTitle = "Примеры наших работ";
 export const inputTitle = {
     name: 'Ваше имя',
     phone: 'Ваш телефон',
+    email: 'E-mail',
     production: 'Что устанавливаем'
 };
 export const aboutUsDescription = {
@@ -30,9 +32,10 @@ export const aboutUsDescription = {
     four: 'Индивидуальный подход к каждому клиенту. Скидки от объёмов. Акции. Подарки. Специальные условия для дизайнеров и строительных организаций.'
 };
 export const formPlaceholder = {
-    name: 'Павел',
-    phone: '8-XXX-XXX-XX-XX',
-    text: 'Краткое описание'
+    name: 'Имя. Ваше. Тут.',
+    phone: 'Телефончик ваш... для нас',
+    email: 'E-mail черканите, если захотите',
+    text: 'Что надо то?'
 };
 
 
