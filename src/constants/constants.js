@@ -33,7 +33,7 @@ export const aboutUsDescription = {
 };
 export const formPlaceholder = {
     name: 'Имя. Ваше. Тут.',
-    phone: 'Телефончик ваш... для нас',
+    phone: 'X-XXX-XXX-XX-XX',
     email: 'E-mail черканите, если захотите',
     text: 'Что надо то?'
 };

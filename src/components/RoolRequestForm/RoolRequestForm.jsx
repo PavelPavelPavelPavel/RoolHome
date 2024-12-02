@@ -7,12 +7,12 @@ import { validityMinLength } from "../../utils/validation/minLength";
 import { validityOnlyLetter } from "../../utils/validation/onlyLetter";
 import { validityPhone } from "../../utils/validation/phoneRegex";
 import { validityEmail } from "../../utils/validation/emailRegex";
+import { replacementFirstLetterToUpperCase } from "../../utils/function/replacementFirstLetterToUpperCase";
 import {
 	formStyleInitial,
 	formStyleIsOk,
 	inputStyleError,
 	inputStyleInitial,
-	inputStyleOk,
 } from "../../constants/stateConstants";
 import {
 	typeError,
@@ -61,9 +61,9 @@ const RoolRequestForm = () => {
 		else if (
 			validationInputEmail() &&
 			validationInputPhone() &&
-			email.blured &&
+			phone.blured &&
 			validationInputName() &&
-			email.blured
+			name.blured
 		) {
 			setIsValidForm(true);
 		}
@@ -131,6 +131,9 @@ const RoolRequestForm = () => {
 								</label>
 								<input
 									{...name}
+									value={replacementFirstLetterToUpperCase(
+										name.value
+									)}
 									autoComplete='off'
 									onBlur={() => name.onBlur(true)}
 									onFocus={() => name.onBlur(true)}
