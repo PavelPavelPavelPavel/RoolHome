@@ -23,7 +23,6 @@ function App() {
 			{requestFormReducer.isOpened && modalReducer.isOpened && (
 				<RoolRequestForm />
 			)}
-			<Messengers />
 		</div>
 	);
 }

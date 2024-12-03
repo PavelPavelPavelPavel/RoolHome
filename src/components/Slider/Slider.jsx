@@ -37,7 +37,7 @@ const Slider = () => {
 				src={require(`../../images/slider/${slider[slideNum]}`)}
 				alt={"work example"}></img>
 			<div className='absolute top-4 h-20 w-5/12 bg-red/40 rounded-r-md z-30 overflow-hidden'>
-				<h1 className='pr-5 text-3xl text-gray font-bold text-right'>
+				<h1 className='pr-5 text-3xl text-white font-bold text-right'>
 					{sliderTitle}
 				</h1>
 			</div>
