@@ -32,7 +32,6 @@ import { submitBtnText, inputTitle } from "../../constants/constants";
 
 const RoolRequestForm = () => {
 	const dispatch = useDispatch();
-	// const modalReducer = useSelector((state) => state.modalReducer);
 	const name = useInput("");
 	const phone = useInput("");
 	const text = useInput("");
@@ -40,6 +39,7 @@ const RoolRequestForm = () => {
 	const [shadowColorForm, setShadowColorForm] = useState(formStyleInitial);
 	const [btnSubmitText, setBtnSubmitText] = useState(submitBtnTextDisabled);
 	const [isValidForm, setIsValidForm] = useState(false);
+
 	// валидируем фому активируем кнопку и ставим стили подсветки
 	useEffect(() => {
 		if (!isValidForm) {
@@ -50,6 +50,7 @@ const RoolRequestForm = () => {
 			setShadowColorForm(formStyleIsOk);
 		}
 	}, [isValidForm]);
+
 	//валидируем всю форму
 	useEffect(() => {
 		if (
@@ -215,13 +216,6 @@ const RoolRequestForm = () => {
 							{btnSubmitText}
 						</button>
 					</form>
-					{/* <button
-						onClick={() => {
-							isValidForm
-								? setIsValidForm(false)
-								: setIsValidForm(true);
-						}}
-						className='w-20 h-9 border-2 border-black bg-red'></button> */}
 				</>
 			}
 		</Modal>

@@ -3,5 +3,19 @@
 }
 
 .header__btn {
-	@apply min-w-64 min-h-10 flex flex-row items-center justify-between border-2 border-black  rounded-full overflow-hidden transition-all duration-75 active:scale-95 focus:outline-none hover:scale-110;
+	@apply min-w-64 
+	min-h-10 
+	flex 
+	flex-row 
+	items-center 
+	justify-between 
+	border-2 
+	border-black
+	  rounded-full 
+	  overflow-hidden 
+	  transition-all 
+	  duration-75 
+	  active:scale-95 
+	  focus:outline-none 
+	  hover:scale-110;
 }
