@@ -5,7 +5,7 @@ import car from "../../images/car.jpg";
 
 const AboutUs = () => {
 	return (
-		<section className='w-full flex flex-col justify-center items-center py-2 pb-5'>
+		<section className='w-full flex flex-col justify-center items-center py-2 pb-5 xs:text-[8px] sm:text-xs md:text-sm'>
 			<h2 className='title'>{aboutUsTitle}</h2>
 			<ul className='flex flex-col justify-center items-center gap-4'>
 				<li className='max-w-[1031px] p-1 inline-block max-h-40 border-2 rounded-md border-red'>

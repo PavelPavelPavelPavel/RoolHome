@@ -1,9 +1,9 @@
 .aboutus__listitem {
-	@apply flex flex-row justify-between items-center bg-black/[0.1] gap-40 border-black border-2 rounded-md;
+	@apply flex flex-row justify-between items-center bg-black/[0.1] xs:gap-5 sm:gap-10 md:gap-40 border-black border-2 rounded-md;
 }
 .aboutus__img {
-	@apply max-w-40 max-h-40  m-1 border-2 rounded-lg shadow-md shadow-black;
+	@apply sm:w-40 sm:h-40 xs:w-24 xs:h-24  m-1 border-2 rounded-lg shadow-md shadow-black;
 }
 .aboutus__text {
-	@apply max-w-[700px] text-sm text-justify pr-2 py-3 cursor-default self-start;
+	@apply max-w-[700px] text-justify pr-2 py-3 cursor-default self-start;
 }
