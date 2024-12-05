@@ -9,7 +9,7 @@ const OurOffers = () => {
 	return (
 		<section className=' py-2 flex flex-col justify-center items-center pb-5'>
 			<h2 className='title'>{ourOffer}</h2>
-			<ul className='grid grid-cols-4 auto-cols-fr gap-3 justify-items-center'>
+			<ul className='sm:grid xs:flex xs:flex-col sm:grid-cols-3 md:grid-cols-4 auto-cols-fr xs:gap-2 md:gap-3 justify-items-center'>
 				{renderList.map((item) => {
 					return (
 						<Card

@@ -11,7 +11,7 @@ const Card = ({ name, photo }) => {
 
 	return (
 		<li
-			className={`bg-black/[0.1] flex flex-col items-center justify-between gap-2 rounded-md last:-col-start-2 last:-col-end-4 `}>
+			className={`bg-black/[0.1] flex flex-col items-center justify-between gap-2 rounded-md md:last:-col-start-2 md:last:-col-end-4 `}>
 			<h3 className='flex items-center min-h-12 pt-1 text-md font-bold leading-none text-wrap text-center tracking-tighter antialiaseds'>
 				{splitPhotoName(name)}
 			</h3>
