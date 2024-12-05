@@ -19,8 +19,8 @@ const WorksGallery = () => {
 
 	return (
 		<section className='py-2 flex flex-col items-center'>
-			<h2 className='title'>{ourWorksTitle}</h2>
-			<div className='p-2 w-full h-full grid grid-cols-4 gap-2 border-y-2 border-black border-opacity-45'>
+			<h2 className='title xs:text-lg sm:text-2xl'>{ourWorksTitle}</h2>
+			<div className='p-2 w-full h-full xs:flex xs:flex-col xs:gap-2 sm:grid sm:grid-cols-2 md:grid-cols-4 gap-2 border-y-2 border-black border-opacity-45'>
 				{workGallary.map((photo) => {
 					return (
 						<img
@@ -28,7 +28,7 @@ const WorksGallery = () => {
 								openFullSize(photo);
 							}}
 							key={crypto.randomUUID()}
-							className='w-full h-[350px]  first:col-span-3 rounded-sm object-cover cursor-pointer opacity:0 duration-500 active:opacity-65 hover:opacity-85 hover:duration-500 overflow-hidden'
+							className='w-full h-[350px] md:first:col-span-3 rounded-sm object-cover cursor-pointer opacity:0 duration-500 active:opacity-65 hover:opacity-85 hover:duration-500 overflow-hidden'
 							src={require(`../../images/worksPhotosGallery/${photo}`)}
 							alt={photo.fileName}></img>
 					);
