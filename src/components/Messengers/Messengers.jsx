@@ -2,14 +2,17 @@ import { useEffect, useState } from "react";
 import whatsAppIcon from "../../images/socialIcons/whatsapp.svg";
 import telegramIcon from "../../images/socialIcons/telegram.svg";
 import { telegram, whatsApp } from "../../constants/url";
-
+import {
+	messengerScrollYPositionInitial,
+	messengerScrollYPositionBottomPage,
+} from "../../constants/stateConstants";
 const Messengers = () => {
-	const [style, setStyle] = useState("bottom-5");
+	const [style, setStyle] = useState(messengerScrollYPositionInitial);
 
 	function handleScroll() {
 		if (window.scrollY > 3350) {
-			setStyle("bottom-44");
-		} else setStyle("bottom-5");
+			setStyle(messengerScrollYPositionBottomPage);
+		} else setStyle(messengerScrollYPositionInitial);
 	}
 
 	useEffect(() => {

@@ -16,7 +16,7 @@ module.exports = {
         pulse: pulseKeyFrames,
         scroll: scrollKeyFrames,
         pulseColor,
-        pulseColorSecond
+        pulseColorSecond,
       }
     },
   },

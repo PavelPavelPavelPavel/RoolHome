@@ -136,7 +136,11 @@ const RoolRequestForm = () => {
 										name.value
 									)}
 									autoComplete='off'
-									onBlur={() => name.onBlur(true)}
+									onBlur={
+										name.onBlur
+											? () => name.onBlur(true)
+											: undefined
+									}
 									onFocus={() => name.onBlur(true)}
 									required
 									className={`${inputStyleInitial} ${setStyleToInput(
@@ -157,7 +161,11 @@ const RoolRequestForm = () => {
 								<input
 									{...phone}
 									autoComplete='off'
-									onBlur={() => phone.onBlur(true)}
+									onBlur={
+										phone.onBlur
+											? () => phone.onBlur(true)
+											: undefined
+									}
 									onFocus={() => phone.onBlur(true)}
 									required
 									className={`${inputStyleInitial} ${setStyleToInput(
@@ -179,7 +187,11 @@ const RoolRequestForm = () => {
 									{...email}
 									autoComplete='off'
 									required
-									onBlur={() => email.onBlur(true)}
+									onBlur={
+										email.onBlur
+											? () => email.onBlur(true)
+											: undefined
+									}
 									onFocus={() => email.onBlur(true)}
 									className={`${inputStyleInitial} ${setStyleToInput(
 										validationInputEmail()
@@ -200,7 +212,11 @@ const RoolRequestForm = () => {
 									{...text}
 									autoComplete='off'
 									maxLength='200'
-									onBlur={() => text.onBlur(true)}
+									onBlur={
+										text.onBlur
+											? () => text.onBlur(true)
+											: undefined
+									}
 									onFocus={() => text.onBlur(true)}
 									className={`${inputStyleInitial}`}
 									type='text'

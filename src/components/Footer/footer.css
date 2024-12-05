@@ -3,7 +3,7 @@
 }
 
 .footer__mail-text {
-	@apply text-white transition-all duration-75 active:text-black hover:scale-110;
+	@apply text-black underline transition-all duration-150 active:scale-100 hover:text-white;
 }
 .footer__mail-copytext {
 	@apply max-w-32 text-black text-xs leading-3 cursor-auto;

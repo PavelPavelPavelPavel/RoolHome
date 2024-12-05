@@ -1,6 +1,3 @@
-import { BackspaceIcon } from "@heroicons/react/16/solid";
-
-
 export const customColors = {
     'red': '#B22222',
     'white': '#ffffff',
@@ -33,20 +30,28 @@ export const scrollKeyFrames = {
 
 
 export const pulseColor = {
-    "0%": {
+    "0%, 15%": {
         opacity: "0",
     },
+    // "15%": {
+    //     opacity: "0",
+    // },
     "70%": {
         opacity: "1"
     }
 }
 
 export const pulseColorSecond = {
-    "0%": {
+    "0%, 15%": {
         opacity: "0",
     },
+    // "15%": {
+    //     opacity: "0",
+    // },
     "70%": {
         opacity: "1"
     },
 }
+
+
 

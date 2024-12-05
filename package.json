@@ -5,6 +5,7 @@
 	"dependencies": {
 		"@headlessui/react": "^2.1.10",
 		"@heroicons/react": "^2.1.5",
+		"@material-tailwind/react": "^2.1.10",
 		"@redux-devtools/extension": "^3.3.0",
 		"@reduxjs/toolkit": "^2.2.8",
 		"@testing-library/jest-dom": "^5.17.0",

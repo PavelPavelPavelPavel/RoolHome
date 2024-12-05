@@ -3,6 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { addModalAction } from "../../store/modalReducer";
 import { copyTextToClipboard } from "../../utils/function/copyTextToClipBoard";
 import {
+	mailTextStyle,
+	messageCopyTextStyle,
+} from "../../constants/stateConstants";
+import {
 	companyName,
 	startAge,
 	cityTel,
@@ -18,8 +22,6 @@ import {
 const Footer = () => {
 	const dispatch = useDispatch();
 	const isOpened = useSelector((state) => state.modalReducer.isOpened);
-	const mailTextStyle = "footer__mail-text";
-	const messageCopyTextStyle = "footer__mail-copytext";
 
 	function saveEmail() {
 		dispatch(addModalAction(true));
