@@ -14,9 +14,9 @@ function App() {
 
 	return (
 		<div className='app'>
-			{/* <Header /> */}
+			<Header />
 			<Main />
-			{/* <Footer /> */}
+			<Footer />
 			{imgPopupReducer.isOpened && modalReducer.isOpened && (
 				<FullSizePhoto />
 			)}
