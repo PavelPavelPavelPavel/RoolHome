@@ -122,8 +122,8 @@ const RoolRequestForm = () => {
 						noValidate
 						onSubmit={(e) => handleSubmit(e)}
 						className={`form ${shadowColorForm}`}>
-						<fieldset className='flex flex-col gap-1 w-full'>
-							<legend className='w-full mb-5 text-center border-b-2 border-black font-bold text-2xl'>
+						<fieldset className='flex flex-col xs:gap-2 md:gap-1 w-full'>
+							<legend className='w-full xs:pb-1 md:pb-0 xs:mb-2 md:mb-5 text-center border-b-2 border-black font-bold xs:text-sm xs:leading-4 md:leading-10 md:text-2xl'>
 								{requestFormTitle}
 							</legend>
 							<p className='input__wrapper'>
