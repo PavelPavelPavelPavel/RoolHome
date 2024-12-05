@@ -20,21 +20,24 @@ const Header = () => {
 	}
 
 	return (
-		<header className='w-full p-2 pb-5  flex flex-row items-center justify-between'>
-			<img src={logo} className='max-w-64' alt='logo'></img>
-			<div className='flex flex-col items-center gap-1'>
+		<header className='w-full p-2 pb-5  flex xs:flex-col sm:flex-row xs:gap-2 items-center justify-between'>
+			<img
+				src={logo}
+				className='xs:max-w-48 sm:max-w-48 md:max-w-64'
+				alt='logo'></img>
+			<div className='flex flex-col items-center gap-1 xs:border-t-2 xs:border-t-red'>
 				<ul className='list-none'>
 					<li className='header__phone'>{mobileTel}</li>
 					<li className='header__phone'>{cityTel}</li>
 				</ul>
 				<button onClick={sendCallInfo} className='header__btn'>
-					<span className='pl-2 text-red animate-pulse'>
+					<span className='md:text-base xs:text-xs xs:leading-3 pl-2 text-red animate-pulse'>
 						{getCall}
 					</span>
 					<img
 						src={phoneSign}
 						alt='phoneSign'
-						className='max-w-6 max-h-6 pr-2 animate-pulse'
+						className='xs:w-5 xs:h-5 max-w-6 max-h-6 pr-2 animate-pulse'
 					/>
 				</button>
 			</div>

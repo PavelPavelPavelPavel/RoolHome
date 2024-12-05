@@ -1,10 +1,22 @@
 .header__phone {
-	@apply flex items-center font-bold text-4xl text-red max-h-9 content-center;
+	@apply flex 
+	items-center 
+	font-bold
+	xs:text-xl
+	sm:text-2xl
+	md:text-4xl
+	 text-red 
+	 max-h-9 
+	 content-center;
 }
 
 .header__btn {
-	@apply min-w-64 
-	min-h-10 
+	@apply md:min-w-64 
+	md:min-h-10 
+	sm:w-44
+	sm:h-8
+	xs:w-44
+	xs:h-8
 	flex 
 	flex-row 
 	items-center 

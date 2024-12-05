@@ -11,13 +11,12 @@ function App() {
 	const imgPopupReducer = useSelector((state) => state.imgPopupReducer);
 	const modalReducer = useSelector((state) => state.modalReducer);
 	const requestFormReducer = useSelector((state) => state.requestFormReducer);
-	console.log(requestFormReducer);
 
 	return (
 		<div className='app'>
 			<Header />
-			<Main />
-			<Footer />
+			{/* <Main />
+			<Footer /> */}
 			{imgPopupReducer.isOpened && modalReducer.isOpened && (
 				<FullSizePhoto />
 			)}
