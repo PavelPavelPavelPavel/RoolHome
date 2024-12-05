@@ -25,7 +25,7 @@ const Header = () => {
 				src={logo}
 				className='xs:max-w-48 sm:max-w-48 md:max-w-64'
 				alt='logo'></img>
-			<div className='flex flex-col items-center gap-1 xs:border-t-2 xs:border-t-red'>
+			<div className='flex flex-col items-center gap-1 xs:border-t-2 xs:border-t-red sm:border-none'>
 				<ul className='list-none'>
 					<li className='header__phone'>{mobileTel}</li>
 					<li className='header__phone'>{cityTel}</li>

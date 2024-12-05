@@ -1,10 +1,22 @@
 .footer {
-	@apply p-2 h-36 tracking-normal relative w-full bg-red flex flex-row justify-between items-center rounded-t-md;
+	@apply p-2
+	 xs:min-h-48
+	 sm:h-36 
+	 tracking-normal 
+	 relative 
+	 w-full
+   bg-red 
+	 flex
+	 xs:flex-col
+	 sm:flex-row
+	 justify-between
+	 items-center
+     rounded-t-md;
 }
 
 .footer__mail-text {
-	@apply text-black underline transition-all duration-150 active:scale-100 hover:text-white;
+	@apply underline transition-all duration-150 active:scale-100 hover:text-white;
 }
 .footer__mail-copytext {
-	@apply max-w-32 text-black text-xs leading-3 cursor-auto;
+	@apply max-w-32 text-xs leading-3 cursor-auto;
 }
