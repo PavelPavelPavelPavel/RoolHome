@@ -1,5 +1,8 @@
 .form {
-	@apply w-4/12
+	@apply xs:w-8/12
+    xm:w-6/12
+    sm:w-4/12
+    lg:w-4/12
     md:px-5
     md:pt-3
     md:pb-5
@@ -36,15 +39,16 @@
     focus:border-blue 
     focus:shadow-md 
     focus:shadow-blue
-    placeholder-shown:text-xs;
+    sm:placeholder-shown:text-xs
+    xs:placeholder-shown:text-[8px];
 }
 
 .input__err {
 	@apply w-full
-     xs:h-1 
-     md:h-3 
-     xs:mb-1 
-     md:mb-0 
+     /* xs:h-1  */
+     xs:h-3 
+     xs:mb-0
+     /* md:mb-0  */
      mt-1 
      pl-1 
      text-left
@@ -65,9 +69,11 @@
 }
 
 .btn__submit-form {
-	@apply mt-5 
+	@apply xs:mt-1
+    sm:mt-5 
     w-full 
-    h-11 
+    xs:h-9
+    sm:h-11 
     bg-green/50 
     border-black 
     border-2 rounded 

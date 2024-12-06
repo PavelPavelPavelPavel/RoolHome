@@ -150,7 +150,7 @@ const RoolRequestForm = () => {
 									id='name'
 									placeholder={`${formPlaceholder.name}`}
 								/>
-								<span className='input__err'>
+								<span className={`input__err`}>
 									{name.blured && validationInputName()}
 								</span>
 							</p>
