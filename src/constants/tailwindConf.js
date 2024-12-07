@@ -8,6 +8,7 @@ export const customColors = {
     'green': "#00FA9A",
 };
 
+
 export const pulseKeyFrames = {
     "0%, 100%": {
         opacity: "1",
@@ -29,13 +30,19 @@ export const scrollKeyFrames = {
 }
 
 
+// export const pulseColor = {
+//     "0%, 15%": {
+//         opacity: "0",
+//     },
+//     "70%": {
+//         opacity: "1"
+//     }
+// }
+
 export const pulseColor = {
     "0%, 15%": {
         opacity: "0",
     },
-    // "15%": {
-    //     opacity: "0",
-    // },
     "70%": {
         opacity: "1"
     }
@@ -45,9 +52,6 @@ export const pulseColorSecond = {
     "0%, 15%": {
         opacity: "0",
     },
-    // "15%": {
-    //     opacity: "0",
-    // },
     "70%": {
         opacity: "1"
     },

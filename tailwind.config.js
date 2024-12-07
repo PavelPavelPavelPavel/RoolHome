@@ -8,7 +8,7 @@ module.exports = {
     colors: customColors,
     extend: {
       animation: {
-        pulse: "pulse 4s linear infinite",
+        pulse: "pulse 5s linear infinite",
         pulseBg: "pulseColor 2s linear",
         pulseBgSecond: "pulseColorSecond 2s linear",
       },
