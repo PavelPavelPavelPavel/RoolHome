@@ -1,6 +1,7 @@
 {
 	"name": "roolhome",
 	"version": "0.1.0",
+	"homepage": "https://PavelPavelPavelPavel.github.io/RoolHome",
 	"private": true,
 	"dependencies": {
 		"@headlessui/react": "^2.1.10",
