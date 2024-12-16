@@ -1,5 +1,25 @@
 .messengers {
-	@apply p-1 fixed xs:right-3 md:right-5 xl:right-14 flex justify-around items-center flex-col xs:gap-1 xs:w-12 xs:h-24  sm:gap-0 md:w-16 md:h-28 bg-red/70 rounded-full z-50 box-border;
+	@apply p-1
+      fixed
+      xs:bottom-5
+      sm:bottom-11
+      xs:right-3 
+      md:right-5 
+      xl:right-14 
+      flex 
+      justify-around 
+      items-center 
+      flex-col 
+      xs:gap-1 
+      xs:w-12 
+      xs:h-24  
+      sm:gap-0 
+      md:w-16 
+      md:h-28
+    bg-black/70 
+    rounded-full 
+    z-50 
+    box-border;
 }
 
 .messengers__link {
