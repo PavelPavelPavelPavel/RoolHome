@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RoolHome/static/css/main.733138ba.css",
-    "main.js": "/RoolHome/static/js/main.f0e8c2a4.js",
+    "main.css": "/RoolHome/static/css/main.21840820.css",
+    "main.js": "/RoolHome/static/js/main.b59306bc.js",
     "static/js/453.d3ad4a8c.chunk.js": "/RoolHome/static/js/453.d3ad4a8c.chunk.js",
     "static/media/1.jpg": "/RoolHome/static/media/1.3130ae10c43373a31c18.jpg",
     "static/media/rimskie.jpg": "/RoolHome/static/media/rimskie.44fe093b0993862dbb26.jpg",
@@ -43,12 +43,12 @@
     "static/media/telegram.svg": "/RoolHome/static/media/telegram.194a7795f2ca9ce67ba3df939b767705.svg",
     "static/media/phone.svg": "/RoolHome/static/media/phone.058c67037e8121210e332f20462a1ec4.svg",
     "static/media/closeBtn.svg": "/RoolHome/static/media/closeBtn.23c5d7d84e61f8964a610984bcc063d4.svg",
-    "main.733138ba.css.map": "/RoolHome/static/css/main.733138ba.css.map",
-    "main.f0e8c2a4.js.map": "/RoolHome/static/js/main.f0e8c2a4.js.map",
+    "main.21840820.css.map": "/RoolHome/static/css/main.21840820.css.map",
+    "main.b59306bc.js.map": "/RoolHome/static/js/main.b59306bc.js.map",
     "453.d3ad4a8c.chunk.js.map": "/RoolHome/static/js/453.d3ad4a8c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.733138ba.css",
-    "static/js/main.f0e8c2a4.js"
+    "static/css/main.21840820.css",
+    "static/js/main.b59306bc.js"
   ]
 }
