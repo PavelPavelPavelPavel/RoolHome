@@ -8,6 +8,7 @@ import {
 } from "../../constants/stateConstants";
 const Messengers = () => {
 	const [style, setStyle] = useState(messengerScrollYPositionInitial);
+	const [styleOne, setStyleOne] = useState("");
 
 	function handleScroll() {
 		if (window.scrollY > 3350) {
