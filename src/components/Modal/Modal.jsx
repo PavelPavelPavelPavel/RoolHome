@@ -29,7 +29,7 @@ const Modal = ({ children }) => {
 					handleCloseImg();
 				}}>
 				<img
-					className='xs:w-5 xs:h-5 xm:w-6 xm:h-6 sm:w-8 sm:h-8 md:w-14 md:h-14'
+					className='xs:w-8 xs:h-8 md:w-14 md:h-14'
 					src={closeBtn}
 					alt='close button'
 				/>
