@@ -22,7 +22,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"deploy": "git checkout gh-pages && npm run build && cp -r /c/dev/projects/roolhome/build/* /c/dev/projects/roolhome/docs && git add -A && git commit -m 'deploy'",
+		"deploy": "git checkout gh-pages && git merge development && npm run build && cp -r /c/dev/projects/roolhome/build/* /c/dev/projects/roolhome/docs && git add -A && git commit -m 'deploy'",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"

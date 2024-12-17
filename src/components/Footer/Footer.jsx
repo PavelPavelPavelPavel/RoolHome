@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { addModalAction } from "../../store/modalReducer";
 import { copyTextToClipboard } from "../../utils/function/copyTextToClipBoard";
 import {
 	mailTextStyle,
@@ -20,17 +18,16 @@ import {
 } from "../../constants/constants";
 
 const Footer = () => {
-	const dispatch = useDispatch();
-	const isOpened = useSelector((state) => state.modalReducer.isOpened);
+	const [emailDisplay, setEmailDisplay] = useState(false);
 
 	function saveEmail() {
-		dispatch(addModalAction(true));
+		setEmailDisplay(true);
 		copyTextToClipboard(email);
 		setTimeout(returnEmailBtn, 2000);
 	}
 
 	function returnEmailBtn() {
-		dispatch(addModalAction(false));
+		setEmailDisplay(false);
 	}
 
 	return (
@@ -47,11 +44,11 @@ const Footer = () => {
 					<div className='flex flex-col gap-1 xs:border-b-2 sm:border-none xs:pb-2 sm:pb-0'>
 						<h3 className='font-bold'>{`${emailTitle}:`}</h3>
 						<button
-							disabled={isOpened}
+							disabled={emailDisplay}
 							className={`text-black  xs:text-left
-								${isOpened ? messageCopyTextStyle : mailTextStyle}`}
+								${emailDisplay ? messageCopyTextStyle : mailTextStyle}`}
 							onClick={saveEmail}>
-							{isOpened ? copyPhone : email}
+							{emailDisplay ? copyPhone : email}
 						</button>
 					</div>
 				</li>

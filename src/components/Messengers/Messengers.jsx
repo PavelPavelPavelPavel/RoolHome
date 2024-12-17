@@ -2,28 +2,10 @@ import { useEffect, useState } from "react";
 import whatsAppIcon from "../../images/socialIcons/whatsapp.svg";
 import telegramIcon from "../../images/socialIcons/telegram.svg";
 import { telegram, whatsApp } from "../../constants/url";
-import {
-	messengerScrollYPositionInitial,
-	messengerScrollYPositionBottomPage,
-} from "../../constants/stateConstants";
+
 const Messengers = () => {
-	const [style, setStyle] = useState(messengerScrollYPositionInitial);
-
-	function handleScroll() {
-		if (window.scrollY > 3350) {
-			setStyle(messengerScrollYPositionBottomPage);
-		} else setStyle(messengerScrollYPositionInitial);
-	}
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll, { passive: true });
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
-
 	return (
-		<ul className={` ${style} messengers`}>
+		<ul className={`messengers`}>
 			<li className='messengers__list-item'>
 				<a target='blanc' href={whatsApp} className='messengers__link'>
 					<img
