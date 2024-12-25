@@ -1,10 +1,5 @@
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 import { useSelector } from "react-redux";
-// import AboutUs from "../AboutUs/AboutUs";
-// import Slider from "../Slider/Slider";
-// import OurOffers from "../OurOffers/OurOffers";
-// import WorksGallery from "../WorksGallery/WorksGallery";
-// import Messengers from "../Messengers/Messengers";
 const AboutUs = lazy(() => import("../AboutUs/AboutUs"));
 const Slider = lazy(() => import("../Slider/Slider"));
 const OurOffers = lazy(() => import("../OurOffers/OurOffers"));

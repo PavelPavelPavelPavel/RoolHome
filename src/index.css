@@ -9,6 +9,7 @@
 @import url(./generalStyle/arrowBtn.css);
 @import url(./components/RoolRequestForm/roolrequestform.css);
 @import url(./components/Messengers/messengers.css);
+@import url(./components/Loaders/MainLoader/mainloader.css);
 
 body {
 	min-width: 200px;

@@ -30,15 +30,6 @@ export const scrollKeyFrames = {
 }
 
 
-// export const pulseColor = {
-//     "0%, 15%": {
-//         opacity: "0",
-//     },
-//     "70%": {
-//         opacity: "1"
-//     }
-// }
-
 export const pulseColor = {
     "0%, 15%": {
         opacity: "0",

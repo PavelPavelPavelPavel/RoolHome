@@ -2,13 +2,11 @@ import logo from "../../images/logo.svg";
 import phoneSign from "../../images/phone.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { requestFormAction } from "../../store/requestFormReducer";
-import { addModalAction, modalReducer } from "../../store/modalReducer";
+import { addModalAction } from "../../store/modalReducer";
 import { mobileTel, cityTel, getCall } from "../../constants/constants";
-import { requestFormReducer } from "../../store/requestFormReducer";
 
 const Header = () => {
 	const dispatch = useDispatch();
-	const test = useSelector((state) => state.requestFormReducer);
 
 	function sendCallInfo() {
 		dispatch(addModalAction(true));
