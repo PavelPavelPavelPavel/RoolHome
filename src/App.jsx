@@ -1,11 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
+// import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import Messengers from "./components/Messengers/Messengers";
 import FullSizePhoto from "./components/FullSizePhoto/FullSizePhoto";
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import RoolRequestForm from "./components/RoolRequestForm/RoolRequestForm";
+const Main = lazy(() => import("./components/Main/Main"));
 
 function App() {
 	const imgPopupReducer = useSelector((state) => state.imgPopupReducer);
@@ -15,7 +16,9 @@ function App() {
 	return (
 		<div className='app'>
 			<Header />
-			<Main />
+			<Suspense fallback={<p>Loading...</p>}>
+				<Main />
+			</Suspense>
 			<Footer />
 			{imgPopupReducer.isOpened && modalReducer.isOpened && (
 				<FullSizePhoto />
