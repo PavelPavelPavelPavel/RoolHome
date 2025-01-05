@@ -1,9 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
+import { useState } from "react";
 import Modal from "../Modal/Modal";
 
 const FullSizePhoto = () => {
 	const imgInfo = useSelector((state) => state.imgPopupReducer);
-
+	console.log(imgInfo);
 	return (
 		<Modal>
 			{

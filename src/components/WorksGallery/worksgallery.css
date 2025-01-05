@@ -1,0 +1,28 @@
+.worksgallery__card {
+	@apply w-full 
+	h-[350px] 
+	md:first:col-span-3 
+	rounded-sm 
+	object-cover 
+	cursor-pointer 
+	duration-500 
+	active:opacity-65 
+	hover:opacity-85 
+	hover:duration-500 
+	overflow-hidden;
+}
+
+.worksgallery__card-wrapper {
+	@apply p-2
+	 w-full
+	 h-full
+	 xs:flex
+	 xs:flex-col 
+	 xs:gap-2 
+	 sm:grid 
+	 sm:grid-cols-2 
+	 md:grid-cols-4 
+	 gap-2 border-y-2
+   border-black
+     border-opacity-45;
+}

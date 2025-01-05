@@ -2,28 +2,13 @@ import { useEffect, useState } from "react";
 import whatsAppIcon from "../../images/socialIcons/whatsapp.svg";
 import telegramIcon from "../../images/socialIcons/telegram.svg";
 import { telegram, whatsApp } from "../../constants/url";
+import MessengerBtn from "./MessengerBtn";
 
 const Messengers = () => {
 	return (
 		<ul className={`messengers`}>
-			<li className='messengers__list-item'>
-				<a target='blanc' href={whatsApp} className='messengers__link'>
-					<img
-						className='rounded-full'
-						src={whatsAppIcon}
-						alt='icon'
-					/>
-				</a>
-			</li>
-			<li className='messengers__list-item'>
-				<a target='blanc' href={telegram} className='messengers__link'>
-					<img
-						className='rounded-full'
-						src={telegramIcon}
-						alt='icon'
-					/>
-				</a>
-			</li>
+			<MessengerBtn name={whatsApp} src={whatsAppIcon} />
+			<MessengerBtn name={telegram} src={telegramIcon} />
 		</ul>
 	);
 };

@@ -1,6 +1,8 @@
 .mainloader {
-	@apply flex 
-        first:justify-around
+	@apply mb-4
+        z-50
+        flex 
+        justify-around
       bg-red w-16 h-16 
         rounded-full 
         bg-gradient-to-t
