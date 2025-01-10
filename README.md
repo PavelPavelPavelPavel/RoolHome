@@ -4,6 +4,5 @@
 
 ## What will be done:
 
--   darkmode
--   navigation
 -   subsections of the gallery
+-   create backend

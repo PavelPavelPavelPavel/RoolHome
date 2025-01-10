@@ -31,7 +31,7 @@ const Footer = () => {
 	}
 
 	return (
-		<footer className='footer relative'>
+		<footer id='footer' className='footer relative'>
 			<ul className='flex xs:flex-col xs:text-xs xs:gap-2 sm:text-sm md:text-base sm:flex-row sm:gap-8'>
 				<li className='flex flex-col gap-1'>
 					<div className='xs:border-b-2 xs:pb-2 sm:pb-0 sm:border-none'>

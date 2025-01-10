@@ -9,6 +9,7 @@ const Navigation = lazy(() => import("../Navigation/Navigation"));
 
 const Main = () => {
 	const modalReducer = useSelector((state) => state.modalReducer);
+	console.log(lazy());
 	return (
 		<main className='w-full flex flex-col px-2 min-h-80'>
 			<Navigation />

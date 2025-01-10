@@ -3,13 +3,13 @@ const Navigation = () => {
 		<nav className='flex justify-center items-center dark:text-gray'>
 			<ul className='navigation__list'>
 				<li className='navigation__item'>
-					<a href='#'>О нас</a>
+					<a href='#about'>О нас</a>
 				</li>
 				<li className='navigation__item'>
-					<a href='#'>Галерея</a>
+					<a href='#gallery'>Галерея</a>
 				</li>
 				<li className='navigation__item'>
-					<a href='#'>Контактная информация</a>
+					<a href='#footer'>Контактная информация</a>
 				</li>
 			</ul>
 		</nav>

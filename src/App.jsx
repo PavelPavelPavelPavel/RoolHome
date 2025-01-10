@@ -12,7 +12,7 @@ const RoolRequestForm = lazy(() =>
 );
 
 function App() {
-	const [isLoading, setIsLoading] = useState(false);
+	const [isLoading, setIsLoading] = useState();
 	const imgPopupReducer = useSelector((state) => state.imgPopupReducer);
 	const modalReducer = useSelector((state) => state.modalReducer);
 	const requestFormReducer = useSelector((state) => state.requestFormReducer);
