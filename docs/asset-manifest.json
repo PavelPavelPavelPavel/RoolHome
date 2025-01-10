@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RoolHome/static/css/main.5d2340cd.css",
-    "main.js": "/RoolHome/static/js/main.0fdf8fef.js",
+    "main.js": "/RoolHome/static/js/main.20ba8e82.js",
     "static/js/858.07f8a591.chunk.js": "/RoolHome/static/js/858.07f8a591.chunk.js",
     "static/js/558.6f9af1c4.chunk.js": "/RoolHome/static/js/558.6f9af1c4.chunk.js",
     "static/js/67.ae45fb34.chunk.js": "/RoolHome/static/js/67.ae45fb34.chunk.js",
@@ -53,7 +53,7 @@
     "static/media/phone.svg": "/RoolHome/static/media/phone.4afd2395e477d0a4889cc6480868d09e.svg",
     "static/media/closeBtn.svg": "/RoolHome/static/media/closeBtn.23c5d7d84e61f8964a610984bcc063d4.svg",
     "main.5d2340cd.css.map": "/RoolHome/static/css/main.5d2340cd.css.map",
-    "main.0fdf8fef.js.map": "/RoolHome/static/js/main.0fdf8fef.js.map",
+    "main.20ba8e82.js.map": "/RoolHome/static/js/main.20ba8e82.js.map",
     "858.07f8a591.chunk.js.map": "/RoolHome/static/js/858.07f8a591.chunk.js.map",
     "558.6f9af1c4.chunk.js.map": "/RoolHome/static/js/558.6f9af1c4.chunk.js.map",
     "67.ae45fb34.chunk.js.map": "/RoolHome/static/js/67.ae45fb34.chunk.js.map",
@@ -67,6 +67,6 @@
   },
   "entrypoints": [
     "static/css/main.5d2340cd.css",
-    "static/js/main.0fdf8fef.js"
+    "static/js/main.20ba8e82.js"
   ]
 }
