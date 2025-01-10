@@ -23,7 +23,7 @@ const WorksGallery = () => {
 	}
 
 	return (
-		<section className='py-2 flex flex-col items-center'>
+		<section id='gallery' className='py-2 flex flex-col items-center'>
 			<h2 className='title xs:text-lg sm:text-2xl'>{ourWorksTitle}</h2>
 			<div className='worksgallery__card-wrapper'>
 				{workGallary.map((photo) => {
