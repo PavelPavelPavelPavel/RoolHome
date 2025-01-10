@@ -21,7 +21,7 @@ const Header = () => {
 		<header className='w-full p-2 pb-5  flex xs:flex-col sm:flex-row xs:gap-2 items-center justify-between'>
 			<img
 				src={logo}
-				className='xs:max-w-48 sm:max-w-48 md:max-w-64'
+				className='xs:max-w-48 sm:max-w-48 md:max-w-64 '
 				alt='logo'></img>
 			<div className='flex flex-col items-center gap-1 xs:border-t-2 xs:border-t-red sm:border-none'>
 				<ul className='list-none'>

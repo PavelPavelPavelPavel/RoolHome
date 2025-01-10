@@ -11,31 +11,33 @@
 @import url(./components/Messengers/messengers.css);
 @import url(./components/MainLoader/mainloader.css);
 @import url(./components/WorksGallery/worksgallery.css);
+@import url(./components/Card/card.css);
 
 body {
-	min-width: 200px;
-	margin: auto;
-	font-family: "ZenKaku", Arial, Helvetica, sans-serif;
-	max-width: 1280px;
-	background-color: #ffffff;
+	@apply min-w-52
+		m-auto
+		font-zenKaku
+		max-w-[1280px]
+		bg-white
+		dark:bg-black/90;
 }
 
 .app {
-	display: flex;
-	flex-direction: column;
-	flex: 1 auto 1;
-	align-items: center;
-	justify-content: center;
-	position: relative;
+	@apply flex
+		flex-col
+		flex-app
+		items-center
+		justify-center
+		relative;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+	@apply m-0
+		p-0
+		box-border;
 }
 
 svg {
-	display: flex;
-	align-items: center;
+	@apply flex
+		items-center;
 }

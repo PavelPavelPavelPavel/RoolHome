@@ -1,0 +1,13 @@
+.card {
+	@apply bg-black/[0.1] 
+    dark:bg-darkgray
+    dark:text-black 
+      flex 
+      flex-col 
+      items-center 
+      justify-between 
+      gap-2 
+      rounded-md 
+      md:last:-col-start-2 
+      md:last:-col-end-4;
+}
