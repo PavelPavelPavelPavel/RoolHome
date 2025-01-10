@@ -1,11 +1,15 @@
 import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 import { toggleFullSizeImgAction } from "../../store/imgPopupReducer";
 import { addModalAction } from "../../store/modalReducer";
 import { ourWorksTitle } from "../../constants/constants";
 import { workGallary } from "../../constants/images";
+import MainLoader from "../MainLoader/MainLoader";
 
 const WorksGallery = () => {
+	const [isLoading, setIsLoading] = useState(true);
 	const dispatch = useDispatch();
+	const imgInfo = useSelector((state) => state.imgPopupReducer);
 
 	function openFullSize(photo) {
 		dispatch(addModalAction(true));
@@ -13,6 +17,7 @@ const WorksGallery = () => {
 			toggleFullSizeImgAction({
 				fileName: photo,
 				isOpened: true,
+				id: crypto.randomUUID(),
 			})
 		);
 	}
@@ -20,17 +25,19 @@ const WorksGallery = () => {
 	return (
 		<section className='py-2 flex flex-col items-center'>
 			<h2 className='title xs:text-lg sm:text-2xl'>{ourWorksTitle}</h2>
-			<div className='p-2 w-full h-full xs:flex xs:flex-col xs:gap-2 sm:grid sm:grid-cols-2 md:grid-cols-4 gap-2 border-y-2 border-black border-opacity-45'>
+			<div className='worksgallery__card-wrapper'>
 				{workGallary.map((photo) => {
-					return (
+					return isLoading ? (
 						<img
 							onClick={() => {
 								openFullSize(photo);
 							}}
 							key={crypto.randomUUID()}
-							className='w-full h-[350px] md:first:col-span-3 rounded-sm object-cover cursor-pointer opacity:0 duration-500 active:opacity-65 hover:opacity-85 hover:duration-500 overflow-hidden'
+							className='worksgallery__card'
 							src={require(`../../images/worksPhotosGallery/${photo}`)}
 							alt={photo.fileName}></img>
+					) : (
+						<MainLoader />
 					);
 				})}
 			</div>

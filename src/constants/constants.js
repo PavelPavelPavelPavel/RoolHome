@@ -1,7 +1,7 @@
 
 export const cityTel = '+7-499-714-15-25';
 export const mobileTel = '+7-901-330-15-25';
-export const copyPhone = 'Email скопирован в буфер обмена';
+export const copyPhone = 'Email скопирован.';
 export const telTitle = 'Телефон';
 export const email = 'info@roolhome.ru';
 export const emailTitle = 'Почта';

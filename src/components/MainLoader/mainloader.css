@@ -1,0 +1,18 @@
+.mainloader {
+	@apply mb-4
+        z-50
+        flex 
+        justify-around
+      bg-red w-16 h-16 
+        rounded-full 
+        bg-gradient-to-t
+      from-red
+      to-white 
+        before:w-6 
+        before:h-6 
+        before:m-0 
+        before:rounded-full
+      before:bg-white 
+        before:self-center 
+        before:justify-self-center;
+}

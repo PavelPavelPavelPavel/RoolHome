@@ -6,6 +6,7 @@ export const customColors = {
     'orange': '#FFA500',
     'blue': "#4169E1",
     'green': "#00FA9A",
+    'darkgray': "#708090",
 };
 
 
@@ -15,6 +16,24 @@ export const pulseKeyFrames = {
     },
     "50%": {
         opacity: "0.2",
+    }
+}
+
+export const pulseKeyFramesDarkMode = {
+    "0%, 100%": {
+        "color": "#B22222",
+    },
+    "50%": {
+        "color": "darkgray",
+    }
+}
+
+export const pulseKeyFramesTelePhoneDarkMode = {
+    "0%, 100%": {
+        "background-color": "#B22222",
+    },
+    "50%": {
+        "color": "white",
     }
 }
 
@@ -29,15 +48,6 @@ export const scrollKeyFrames = {
 
 }
 
-
-// export const pulseColor = {
-//     "0%, 15%": {
-//         opacity: "0",
-//     },
-//     "70%": {
-//         opacity: "1"
-//     }
-// }
 
 export const pulseColor = {
     "0%, 15%": {

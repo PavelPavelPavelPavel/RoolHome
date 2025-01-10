@@ -33,5 +33,9 @@
 }
 
 .messengers__list-item {
-	@apply flex items-center justify-center md:w-10/12 h-2/5 rounded-full;
+	@apply flex 
+    items-center 
+    justify-center 
+    md:w-10/12 h-2/5 
+    rounded-full;
 }
