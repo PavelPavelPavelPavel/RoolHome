@@ -1,5 +1,6 @@
 import logo from "../../images/logo.svg";
 import phoneSign from "../../images/phone.svg";
+import Button from "../Button/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { requestFormAction } from "../../store/requestFormReducer";
 import { addModalAction } from "../../store/modalReducer";
@@ -18,7 +19,7 @@ const Header = () => {
 	}
 
 	return (
-		<header className='w-full p-2 pb-5  flex xs:flex-col sm:flex-row xs:gap-2 items-center justify-between'>
+		<header className='w-full p-2 pb-5 flex xs:flex-col sm:flex-row xs:gap-2 items-center justify-between'>
 			<img
 				src={logo}
 				className='xs:max-w-48 sm:max-w-48 md:max-w-64 '
@@ -28,7 +29,7 @@ const Header = () => {
 					<li className='header__phone'>{mobileTel}</li>
 					<li className='header__phone'>{cityTel}</li>
 				</ul>
-				<button onClick={sendCallInfo} className='header__btn'>
+				<Button onClick={sendCallInfo} className={"header__btn"}>
 					<span className='md:text-base xs:text-xs xs:leading-3 pl-2 text-red animate-pulse'>
 						{getCall}
 					</span>
@@ -37,7 +38,7 @@ const Header = () => {
 						alt='phoneSign'
 						className='xs:w-5 xs:h-5 max-w-6 max-h-6 pr-2 animate-pulse'
 					/>
-				</button>
+				</Button>
 			</div>
 		</header>
 	);

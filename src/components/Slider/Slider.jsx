@@ -36,7 +36,7 @@ const Slider = () => {
 				className={`object-cover w-full h-full ${emergenceStyle}`}
 				src={require(`../../images/slider/${slider[slideNum]}`)}
 				alt={"work example"}></img>
-			<div className='absolute top-4 sm:h-1/6 xs:min-h-[48px] xs:2/6 w-5/12 bg-red/40 rounded-r-md z-30 overflow-hidden '>
+			<div className='absolute top-4 sm:h-1/6 xs:min-h-[48px] xs:2/6 w-5/12 bg-red/40 rounded-r-md z-32 overflow-hidden '>
 				<h1 className='pr-5 lg:text-3xl md:text-2xl sm:text-xl xs:leading-5 sm:leading-6 xs:text-md text-white dark:text-gray font-bold text-right'>
 					{sliderTitle}
 				</h1>

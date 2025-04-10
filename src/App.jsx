@@ -1,6 +1,7 @@
-import { useEffect, useState, lazy, Suspense } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useState, lazy, Suspense } from "react";
+import { useSelector } from "react-redux";
 import Header from "./components/Header/Header";
+import Navigation from "./components/Navigation/Navigation"
 import Footer from "./components/Footer/Footer";
 import MainLoader from "./components/MainLoader/MainLoader";
 const Main = lazy(() => import("./components/Main/Main"));
@@ -23,7 +24,7 @@ function App() {
 
 	return (
 		<div className='app'>
-			<Header />
+				<Header />	
 			<Suspense
 				fallback={
 					<div>
